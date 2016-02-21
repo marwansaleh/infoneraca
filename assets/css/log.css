@@ -1,0 +1,12 @@
+body { font-size: 11px; }
+#main table.table-log { width: 100%; float: left; display: block; }
+table.table-log thead { font-size: 12px; }
+table.table-log tbody { font-size: 11px; }
+table.table-log tbody td.cookie-id, 
+table.table-log tbody td.agent-string,
+table.table-log tbody td.event-description { font-size: 10px; }
+table.table-log tbody td.cookie-id { max-width: 200px; }
+table.table-log tbody td.datetime { width: 120px; }
+table.table-log tbody td.ip-address { width: 100px; }
+table.table-log tbody td.agent-string { max-width: 300px; overflow-x: hidden; }
+table.table-log tbody td.event-description div { }

@@ -1,0 +1,47 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,300italic,400italic");
+
+body{
+    padding-top: 40px;
+    background-color: #8aa4af;
+}
+a, a:hover {
+  color: #000;
+}
+a:hover {
+  text-transform: none;
+}
+.media-list .media {
+    cursor: pointer; 
+    margin:5px; 
+    border:solid 1px #ccc ;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-color: white;
+}
+.media-list .media-heading { font-size: 13px; font-weight: normal; }
+.media-list .first-item .media-heading { font-size: 14px; font-weight: bold; }
+
+.media-list .media-body { padding:5px 5px 0 0; }
+.media-list .first-item .media-body { padding:5px; }
+.media-list .media:hover{background-color: #ccedfc;}
+.media-list .media:last-child {border-bottom: none;}
+
+.media-list .first-item img {display:block;}
+.media-list .first-item .media-body { margin-top: -60px; height: 60px;  position: absolute; display: block; width:90%; float: left; overflow:hidden;}
+.media-list .first-item .media-body .media-heading, .media-list .first-item .media-body a, .media-list .first-item .media-body p { color: white!important; }
+.media-list .media-body p.date, .media-list .first-item .media-body p.date { font-style: italic; font-size: 11px;  }
+article figure {margin-bottom: 20px;}
+article .info {font-style: italic; display: inline-block; font-size: 10px;}
+article .info .date {color: #001f3f;}
+article .info .author {color: #080808;}
+article .content {font-size: 14px;}
+.blog-page {padding: 10px; background-color: white; display: block; float: left; }
+.share-blog { display: block; float: left; margin: 15px 0 20px 0; width:100%; }
+
+footer {display: block; margin-top: 20px; padding: 10px; background-color: #373737; color: #fff;}
+footer a { color: #fff!important; }
+footer .copyright { text-align: center; font-size: 10px; margin: 0; }
+footer .redaksi { text-align: center; font-size: 10px; margin-bottom: 0; line-height:10px; }
