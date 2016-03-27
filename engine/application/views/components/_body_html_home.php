@@ -23,7 +23,7 @@
                                     <span><a href="<?php echo site_url('detail/'.$highlight->url_title); ?>"><?php echo $highlight->title ?></a></span>
                                 </div>
                                 <figure style="max-height: 205px; overflow-y: hidden;">
-                                    <img src="<?php echo get_image_thumb($highlight->image_url, IMAGE_THUMB_MEDIUM); ?>" alt="">
+                                    <img class="medium" src="<?php echo get_image_thumb($highlight->image_url, IMAGE_THUMB_MEDIUM); ?>" alt="">
                                 </figure>
                                 <div class="main-text">
                                     <div class="inner">
@@ -39,7 +39,7 @@
                                 <?php $rel=1; foreach ($highlight_news as $highlight): ?>
                                 <article <?php echo $rel==1?'class="first-child active':''; ?>" rel="<?php echo $rel++; ?>">
                                     <figure>
-                                        <img src="<?php echo get_image_thumb($highlight->image_url, IMAGE_THUMB_SQUARE); ?>" alt="">
+                                        <img class="square" src="<?php echo get_image_thumb($highlight->image_url, IMAGE_THUMB_SQUARE); ?>" alt="">
                                     </figure>
                                     <div class="text">
                                         <h3><?php echo $highlight->title ?></h3>
@@ -65,7 +65,7 @@
                         <div class="flex-viewport article-inspiration">
                             <a href="<?php echo site_url('detail/'. $inspirasi->url_title); ?>">
                                 <figure style="max-height: 350px; overflow-y: hidden;">
-                                    <img src="<?php echo get_image_thumb($inspirasi->image_url, IMAGE_THUMB_PORTRAIT); ?>" class="img-responsive">
+                                    <img src="<?php echo get_image_thumb($inspirasi->image_url, IMAGE_THUMB_PORTRAIT); ?>" class="portrait">
                                 </figure>
                                 <div class="article-inspiration-info">
                                     <?php if ($inspirasi->ext_attributes):?>
