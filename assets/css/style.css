@@ -2047,3 +2047,9 @@ footer .flickr-gallery img {
     padding: 0;
   }
 }
+
+ul.login li {
+    float: left;
+    border-right: solid 1px #ccc;
+}
+ul.login li:last-child {border-right: none;}
