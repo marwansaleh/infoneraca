@@ -1,22 +1,10 @@
 <header>
     <div class="container">
         <div class="row top-header">
-            <div class="col-sm-3 hidden-xs">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <img src="<?php echo file_exists($weather['weather']->icon_local_url)?site_url($weather['weather']->icon_local_url):$weather['weather']->icon_original_url; ?>" />
-                        <span style="font-weight: bold;">Jakarta</span><br>
-                        <span class=""><?php echo ucfirst($weather['weather']->api_result_summary); ?></span><br>
-                        <span class="">Humidity: <?php echo $weather['weather']->humidity; ?></span><br>
-                        <span class="">Pressure: <?php echo $weather['weather']->pressure; ?></span><br>
-                        <span class="">Temperature: <?php echo kelvin_2_celcius($weather['weather']->temp); ?> &deg;C</span>
-                    </div>
-                </div>
-                <p class="header-date" style="margin-top: 40px; font-size: 14px;"><span class="red-text"><?php echo $weather['indonesia_date']['hari'] ?></span>, <?php echo $weather['indonesia_date']['tanggal'] . ' '. $weather['indonesia_date']['bulan'] .' '. $weather['indonesia_date']['tahun']; ?></p>
-            </div>
+            
             <div class="col-sm-6">
                 <a href="<?php echo site_url() ?>">
-                    <img src="<?php echo site_url('assets/img/logo.png'); ?>" class="img-responsive center-block" />
+                    <h1>INFONERACA.COM</h1>
                 </a>
             </div>
             <div class="col-sm-3">
