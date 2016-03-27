@@ -7,8 +7,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo site_url('home'); ?>" style="padding:0 0 0 25%;">
-                <img src="<?php echo site_url('assets/img/logo-mobile.png'); ?>" class="img-responsive">
+            <a class="navbar-brand" href="<?php echo site_url('home'); ?>">
+                INFONERACA.COM
             </a>
         </div>
         <div class="collapse navbar-collapse" id="nasabah-navbar">
