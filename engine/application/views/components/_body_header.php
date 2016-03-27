@@ -1,51 +1,38 @@
 <header>
     <div class="container">
         <div class="row top-header">
-            
             <div class="col-sm-6">
-                <a href="<?php echo site_url() ?>">
-                    <h1>INFONERACA.COM</h1>
-                </a>
+                <ul class="login">
+                    <?php if ($is_logged_in): ?>
+                    <li>
+                        <a href="<?php echo site_url('auth/logout?redirect='. urlencode(current_url())); ?>">Logout</a>
+                    </li>
+                    <?php else: ?>
+                    <li>
+                        <a class="btn btn-link" data-toggle="modal" data-target="#login-dialog">Login</a>
+                    </li>
+                    <li><a class="btn btn-link">Register</a></li>
+                    <?php endif; ?>
+                </ul>
             </div>
-            <div class="col-sm-3">
-                <div class="row">
-                    <div class="col-sm-12 top-menu hidden-xs">
-                        <div class="pull-right">
-                            <ul>
-                                <?php if ($is_logged_in): ?>
-                                <li>
-                                    <a href="<?php echo site_url('auth/logout?redirect='. urlencode(current_url())); ?>">Logout</a>
-                                </li>
-                                <?php else: ?>
-                                <li>
-                                    <a class="btn btn-link" data-toggle="modal" data-target="#login-dialog">Login</a>
-                                </li>
-                                <li><a class="btn btn-link">Register</a></li>
-                                <?php endif; ?>
-                            </ul>
+            <div class="col-sm-3 col-sm-offset-3">
+                <form method="post" action="<?php echo site_url('search'); ?>">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control" type="text" name="search" placeholder="Search...">
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default" style="background: transparent;"><span class="glyphicon glyphicon-search"></span></button>
                         </div>
                     </div>
-                    <div class="col-sm-12 hidden-xs">
-                        <a href="http://ekakarya.com" target="_blank">
-                            <img src="<?php echo site_url('assets/img/logo-ap.png'); ?>" class="img-responsive pull-right" style="margin-top: -20px;; padding: 0;" />
-                        </a>
-                    </div>
-                    <div class="col-sm-12">
-                        <div style="display: block; margin-top: 5px;">
-                            <form method="post" action="<?php echo site_url('search'); ?>">
-                                <div class="input-group input-group-sm">
-                                    <input class="form-control" type="text" name="search" placeholder="Search...">
-                                    <div class="input-group-btn">
-                                        <button type="submit" class="btn btn-default" style="background: transparent;"><span class="glyphicon glyphicon-search"></span></button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
-
+        <div class="row top-header">
+            <div class="col-sm-12">
+                <a href="<?php echo site_url() ?>">
+                    <h1 class="text-center">INFONERACA.COM</h1>
+                </a>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-12">
                 <div class="col-sm-12 breaking-news">

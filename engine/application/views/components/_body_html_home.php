@@ -79,90 +79,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="widget">
-                    <img src="<?php echo userfiles_baseurl(config_item('advert').'iklan-vds.jpg'); ?>" class="img-responsive" />
-                </div>
-            </div>
-            <?php if (isset($teropong)): ?>
-            <div class="row">
-                <div class="widget">
-                    <div class="box-title">
-                        <h2>Teropong</h2>
-                        <div class="title-line"></div>
-                    </div>
-                    <div class="category-image-container">
-                        <figure>
-                            <img class="img-responsive" src="<?php echo get_image_thumb($teropong->category->image_url, IMAGE_THUMB_ORI); ?>" />
-                        </figure>
-                        <div class="category-info-container">
-                            <h4 class="title"><?php echo $teropong->category->name; ?></h4>
-                            <div class="category-info">
-                                <p><?php echo $teropong->article->synopsis; ?></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <?php endif; ?>
-            <?php if (isset($embun_pagi)): ?>
-            <div class="row">
-                <div class="widget">
-                    <div class="box-title">
-                        <h2>Embun Pagi</h2>
-                        <div class="title-line"></div>
-                    </div>
-                </div>
-                <div class="category-image-container">
-                    <figure>
-                        <img class="img-responsive" src="<?php echo get_image_thumb($embun_pagi->category->image_url, IMAGE_THUMB_ORI); ?>" />
-                    </figure>
-                    <div class="category-info-container right">
-                        <h4 class="title"><?php echo $embun_pagi->category->name; ?></h4>
-                        <div class="category-info">
-                            <p><?php echo $embun_pagi->article->synopsis; ?></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <?php endif; ?>
             
             <?php $this->load->view('components/_side_right'); ?>
         </aside>
     </div>
-    <!-- insert advert -->
-<!--    <div class="container">
-        <div class="row">
-            
-            <div class="col-sm-4">
-                <div class="flexslider flexslider-mid-advert">
-                    <ul class="slides">
-                        <li>
-                            <img src="<?php echo userfiles_baseurl(config_item('advert').'ag01.jpg'); ?>" />
-                        </li>
-                        <li>
-                            <img src="<?php echo userfiles_baseurl(config_item('advert').'ag02.jpg'); ?>" />
-                        </li>
-                        <li>
-                            <img src="<?php echo userfiles_baseurl(config_item('advert').'ag03.jpg'); ?>" />
-                        </li>
-                        <li>
-                            <img src="<?php echo userfiles_baseurl(config_item('advert').'ag04.jpg'); ?>" />
-                        </li>
-                        <li>
-                            <img src="<?php echo userfiles_baseurl(config_item('advert').'ag05.jpg'); ?>" />
-                        </li>
-                        <li>
-                            <img src="<?php echo userfiles_baseurl(config_item('advert').'ag06.jpg'); ?>" />
-                        </li>
-                        <li>
-                            <img src="<?php echo userfiles_baseurl(config_item('advert').'ag07.jpg'); ?>" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>-->
     
 </div>
 
