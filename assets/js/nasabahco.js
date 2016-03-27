@@ -16,8 +16,21 @@ var ImageDefaultManager = {
         //console.log('ImageDefaultMnager is running');
         var _this = this;
         $('img').on('error',function(){
+            //CHECK if image has data-img-sizex
+            if ($(this).attr('data-img-sizex')){
+                var size_x = $(this).attr('data-img-sizex');
+                var size_y = 0;
+                if ($(this).attr('data-img-sizey')){
+                    size_y = $(this).attr('data-img-sizey');
+                }else{
+                    size_y = size_x;
+                }
+                var size_text = size_x+'x'+size_y+'?text=default';
+                
+                $(this).attr('src', _this._baseUrl+size_text);
+            }
             //check if image tag has class
-            if ($(this).attr('class')){
+            else if ($(this).attr('class')){
                 for (var i in _this.availableName){
                     if ($(this).hasClass(_this.availableName[i])){
                         $(this).attr('src', _this.getDefaultImage(_this.availableName[i]));
