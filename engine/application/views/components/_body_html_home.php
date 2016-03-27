@@ -98,11 +98,4 @@
         });
     });
 </script>
-<div id="advert-bottom-bar">
-    <div class="container">
-        <div class="row">
-            <img src="<?php echo userfiles_baseurl(config_item('advert').'1449799747.jpg'); ?>" class="img-responsive" />
-        </div>
-    </div>
-</div>
 <?php $this->load->view('components/_body_footer');
