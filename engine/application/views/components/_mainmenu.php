@@ -2,7 +2,7 @@
     <ul id="mainmenu" class="nav nav-justified">
         <li <?php echo $active_menu=='home'?'class="active"':''; ?>>
             <a href="<?php echo site_url(); ?>">
-                <img src="<?php echo site_url('assets/img/one.png'); ?>" >
+                <span class="glyphicon glyphicon-home"></span>
             </a>
         </li>
         <?php if (isset($mainmenus)): ?>
