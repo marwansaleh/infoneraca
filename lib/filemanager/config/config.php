@@ -179,7 +179,7 @@ $ext = array_merge($ext_img, $ext_file, $ext_misc, $ext_video,$ext_music); //all
 /******************
  * AVIARY config
 *******************/
-$aviary_active 	= TRUE;
+$aviary_active 	= FALSE;
 $aviary_key 	= "dvh8qudbp6yx2bnp";
 $aviary_secret	= "m6xaym5q42rpw433";
 $aviary_version	= 3;
@@ -230,7 +230,7 @@ $fixed_path_from_filemanager            = array(
 ); //fixed path of the image folder from the current position on upload folder
 $fixed_image_creation_name_to_prepend   = array('','','','','','',''); //name to prepend on filename
 $fixed_image_creation_to_append         = array('','','','','','',''); //name to appendon filename
-$fixed_image_creation_width             = array('',555,362,230,70,57,42); //width of image (you can leave empty if you set height)
+$fixed_image_creation_width             = array(600,555,362,230,70,57,42); //width of image (you can leave empty if you set height)
 $fixed_image_creation_height            = array(452,582,'',147,70,57,42); //height of image (you can leave empty if you set width)
 /*
 #             $option:     0 / exact = defined size;

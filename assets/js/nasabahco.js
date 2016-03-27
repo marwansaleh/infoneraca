@@ -1,8 +1,8 @@
 var ImageDefaultManager = {
     _baseUrl: 'http://placehold.it/',
     availableName: ["tiny","smaller","square","small","medium","portrait","large"],
-    availableWidth: [42,57,70,230,362,555,726],
-    availableHeight: [42,57,70,147,205,350,463],
+    availableWidth: [42,57,70,230,362,555,600],
+    availableHeight: [42,57,70,147,205,582,452],
     getDefaultImage: function (size){
         //get default width and height if available
         var index = this.availableName.indexOf(size);
