@@ -259,12 +259,12 @@ class MY_Controller extends MY_BaseController {
     protected $_pagination_adjacent = 3;
     protected $_pagination_pages = 5;
     
-    protected $meta_keyword = array('manajemen', 'resiko', 'majalah', 'stabilitas', 'keuangan','jasa keuangan','tata kelola');
+    protected $meta_keyword = array('manajemen', 'resiko', 'berita', 'infoneraca', 'keuangan','neraca','tata kelola');
     
     function __construct() {
         parent::__construct();    
         
-        $this->data['meta_title'] = 'Indonesia Satu';
+        $this->data['meta_title'] = 'Info Neraca';
         $this->data['active_menu'] = 'home';
         
         //is user loggedin
@@ -299,7 +299,7 @@ class MY_Controller extends MY_BaseController {
             
             $sysvar = $this->get_sys_parameters($param);
             if (!$sysvar){
-                $sysvar[$param] = 'UA-71024445-1';
+                $sysvar[$param] = 'UA-75643734-1';
             }
             $this->session->set_userdata($param, $sysvar[$param]);
             
@@ -373,7 +373,7 @@ class MY_Controller extends MY_BaseController {
      */
     private function meta_set_default(){
         $this->data['meta'] = array(
-            'author'            =>  'Indonesia Satu',
+            'author'            =>  'Infoneraca',
             'description'       =>  'Berita online yang mengulas secara lengkap tentang kejadian yang terjadi setiap hari nasional dan internasional',
             'keywords'          => implode(',', $this->meta_keyword),            
             'canonical'         => current_url(),
@@ -411,8 +411,8 @@ class MY_Controller extends MY_BaseController {
     private function og_set_default(){
         $this->data['og_props'] = array(
             'fb:app_id'         =>  $this->get_FB_ID(),
-            'title'             =>  'Indonesia Satu',
-            'site_name'         =>  'Indonesia Satu',
+            'title'             =>  'Info Neraca',
+            'site_name'         =>  'Infoneraca',
             'description'       =>  'Berita online yang mengulas secara lengkap tentang kejadian yang terjadi setiap hari nasional dan internasional',          
             'url'               =>  current_url(),
             'type'              => 'article'
@@ -429,7 +429,7 @@ class MY_AdminController extends MY_Controller {
             redirect('home');
             exit;
         }
-        $this->data['meta_title'] = 'IndonesiaSatu.co - CMS';
+        $this->data['meta_title'] = 'infoneraca.com - CMS';
         $this->data['active_menu'] = 'dashboard';
         $this->data['body_class'] = 'skin-blue';
         
@@ -465,10 +465,9 @@ class MY_AdminController extends MY_Controller {
             $filemanager = array(
                 'FM_BASEURL'        => rtrim(userfiles_baseurl(), '/'),
                 'FM_UPLOAD_DIR'     => '/' . userfiles_basepath(config_item('images')),
-                'FM_CURRENT_PATH'   => '../../../../images.indonesiasatu.co/www/'. config_item('images'),
-                //'FM_THUMB_PATH'     => '../../../../images.indonesiasatu.co/www/'. config_item('rfthumbs'),
+                'FM_CURRENT_PATH'   => '../../../../images.infoneraca.com/www/'. config_item('images'),
                 'FM_THUMB_PATH'     => '../../thumbs/',
-                'FM_RESIZE_PATH'    => '../../../../images.indonesiasatu.co/www/'. config_item('thumbs')
+                'FM_RESIZE_PATH'    => '../../../../images.infoneraca.com/www/'. config_item('thumbs')
             );
         }
         $_SESSION['FILEMANAGER'] = $filemanager;
@@ -517,7 +516,7 @@ class MY_News extends MY_Controller {
         $this->data['newstickers'] = $this->_newsticker(5);
         //$this->data['categories_articles'] = $this->_all_categories_articles_count(0,4);
         //$this->data['inspirasi_category'] = $this->get_inspirasi();
-        $this->data['weather'] = $this->get_weather();
+        //$this->data['weather'] = $this->get_weather();
         
         $all_channel_and_childrens = $this->get_channels();
         $this->data['channels'] = $all_channel_and_childrens;
