@@ -3,13 +3,13 @@
         <div class="tabbable"> <!-- Only required for left/right tabs -->
             <ul class="nav nav-tabs">
                 <li class="first-child active">
-                    <a data-toggle="tab" href="#tab1"><div class="inner-tab">Popular</div></a>
+                    <a data-toggle="tab" href="#tab1"><div class="inner-tab">Populer</div></a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#tab2"><div class="inner-tab">Recent</div></a>
+                    <a data-toggle="tab" href="#tab2"><div class="inner-tab">Terkini</div></a>
                 </li>
                 <li>
-                    <a data-toggle="tab" href="#tab3"><div class="inner-tab">Comments</div></a>
+                    <a data-toggle="tab" href="#tab3"><div class="inner-tab">Komentari</div></a>
                 </li>
             </ul>
             <div class="tab-content">
