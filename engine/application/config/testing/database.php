@@ -49,13 +49,13 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'k2427808_pre';
-$db['default']['password'] = 'lkfrbx9199';
-$db['default']['database'] = 'k2427808_pre';
+$db['default']['username'] = 'k1579187_if';
+$db['default']['password'] = 'kvawhb7899';
+$db['default']['database'] = 'k1579187_infoneraca';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = 'nsc_';
 $db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = FALSE;
+$db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
 $db['default']['char_set'] = 'utf8';

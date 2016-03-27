@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://indonesiasatu.co/';
+$config['base_url']	= 'http://infoneraca.com/';
 
 /*
 |--------------------------------------------------------------------------

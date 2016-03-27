@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'k2427808_indon1';
-$db['default']['password'] = '2270hmdwce';
-$db['default']['database'] = 'k2427808_main';
+$db['default']['username'] = 'k1579187_if';
+$db['default']['password'] = 'kvawhb7899';
+$db['default']['database'] = 'k1579187_infoneraca';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = 'nsc_';
 $db['default']['pconnect'] = TRUE;

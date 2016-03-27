@@ -6,11 +6,10 @@
  * @author marwansaleh
  */
 class Migration_Add_session extends MY_Migration {
-    protected $_table_name = 'sessions';
-    protected $_primary_key = 'id';
-    protected $_index_keys = array('timestamp');
+    protected $_table_name = 'ci_sessions';
+    protected $_primary_key = 'session_id';
     protected $_fields = array(
-        'id'    => array (
+        'session_id'    => array (
             'type'  => 'VARCHAR',
             'constraint' => 40,
             'NULL' => FALSE
@@ -20,15 +19,18 @@ class Migration_Add_session extends MY_Migration {
             'constraint' => 45,
             'NULL' => FALSE
         ),
-        'timestamp' => array(
-            'type'  => 'INT',
-            'constraint' => 10,
-            'unsigned' => TRUE,
-            'default' => 0,
+        'user_agent' => array(
+            'type'  => 'VARCHAR',
+            'constraint' => 120,
             'NULL' => FALSE
         ),
-        'data' => array(
-            'type' => 'BLOB',
+        'last_activity' => array(
+            'type'  => 'INT',
+            'constraint' => 10,
+            'NULL' => FALSE
+        ),
+        'user_data' => array(
+            'type' => 'TEXT',
             'NULL' => FALSE
         )
     );
