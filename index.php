@@ -3,9 +3,9 @@ date_default_timezone_set('Asia/Jakarta');
 
 $path = dirname(__FILE__);
 echo $path; exit;
-$testing = '/home/sloki/user/k2427808/sites/pre.indonesiasatu.co/www';
-$production_1 = '/home/sloki/user/k2427808/sites/indonesiasatu.co/www';
-$production_2 = '/home/sloki/user/k2427808/sites/www.indonesiasatu.co/www';
+$testing = '/home/sloki/user/k1579187/sites/dev.infoneraca.com/www';
+$production_1 = '/home/sloki/user/k1579187/sites/infoneraca.com/www';
+$production_2 = '/home/sloki/user/k1579187/sites/www.infoneraca.com/www';
 
 switch ($path){
     case $production_1:
