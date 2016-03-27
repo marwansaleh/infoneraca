@@ -4,7 +4,7 @@
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="index2.html" class="logo"><b>INDONESIASATU.CO</b></a>
+        <a href="index2.html" class="logo"><b>INFONERACA</b></a>
 
         <!-- Header Navbar -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -215,7 +215,7 @@
           Content Management System ( CMS )
         </div>
         <!-- Default to the left --> 
-        <strong>Copyright &copy; 2015 <a href="#">IndonesiaSatu.co</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2015 <a href="#">Infoneraca.com</a>.</strong> All rights reserved.
       </footer>
 
     </div>
