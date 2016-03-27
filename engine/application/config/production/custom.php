@@ -4,8 +4,8 @@ $config['captcha'] = 'userfiles/captcha/';
 $config['path_lib'] = 'lib/';
 $config['path_assets'] = 'assets/';
 
-$config['userfiles_base_url'] = 'http://images.indonesiasatu.co/';
-$config['userfiles_base_path'] = '/u/k2427808/sites/images.indonesiasatu.co/www/';
+$config['userfiles_base_url'] = 'http://images.infoneraca.com/';
+$config['userfiles_base_path'] = '/u/k1579187/sites/images.infoneraca.com/www/';
 
 $config['images'] = 'userfiles/images/';
 $config['rfthumbs'] = 'userfiles/rfthumbs/';
